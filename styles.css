@@ -1,0 +1,115 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#number {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #008000;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#receipt {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error-message, .alert {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+#customerList {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+    max-height: 300px;
+    width: 100%;
+    max-width: 400px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.customer-entry {
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #number {
+        font-size: 2.5em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #receipt, #customerList {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    #receipt {
+        padding: 20px;
+    }
+}
